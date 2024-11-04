@@ -1,4 +1,4 @@
-package SeleniumScript;
+package Xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
