@@ -18,10 +18,12 @@ public class XpathByTravesing {
         driver.findElement(By.xpath("//input[contains(@title,'Search for Products, Brands and More')]")).sendKeys("iphone");
         driver.findElement(By.xpath("//button[contains(@aria-label,'Search for Products, Brands and More')]")).click();
         
-        String price = driver.findElement(By.xpath("//div[@class='col col-5-12 BfVC2z']/div/div[1]/div[1]")).getText();
+        //find the common path for both name and price
+        String price = driver.findElement(By.xpath("//div[text()='Apple iPhone 15 (Black, 128 GB)']/../..//div[@class='Nx9bqj _4b5DiR']")).getText();
         System.out.println(price);
         
-      String name = driver.findElement(By.xpath("//div[@class='yKfJKb row']/div[1]/div")).getText();
-      System.out.println(name);
-    }
+	    
+      
+      
+      }
 }
