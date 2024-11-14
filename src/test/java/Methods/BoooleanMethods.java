@@ -12,6 +12,7 @@ public class BoooleanMethods {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
+		//method 5: isDisplayed
 		WebElement img = driver.findElement(By.xpath("//img[@alt='Facebook']"));
 		if(img.isDisplayed())
 		{

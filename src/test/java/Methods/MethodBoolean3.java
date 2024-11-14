@@ -12,7 +12,7 @@ public class MethodBoolean3 {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 
-		
+		//method 7:isSelected()
 		WebElement radio = driver.findElement(By.xpath("//input[@value='1']"));
 		radio.click();
 		if(radio.isSelected())

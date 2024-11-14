@@ -12,6 +12,7 @@ public class Methodclear {
 		driver.get("https://www.saucedemo.com/v1/");
 		driver.manage().window().maximize();
 		
+		//method 4: clear()
 		WebElement name = driver.findElement(By.name("user-name"));
 		name.sendKeys("standard_user");
 		Thread.sleep(2000);

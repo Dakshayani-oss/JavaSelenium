@@ -12,6 +12,7 @@ public class BooleansMethods {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
+		//Method 6: isEnabled
 		WebElement link = driver.findElement(By.xpath("//a[text()='Create new account']"));
 		if(link.isEnabled())
 		{
