@@ -15,12 +15,16 @@ public class CopyPasteKeys {
 		
 		WebElement un = driver.findElement(By.name("user-name"));
 		un.sendKeys("standard_user");
+	
+//		un.sendKeys(Keys.CONTROL +"a");
+//		un.sendKeys(Keys.CONTROL+"c");
+//		
+//		WebElement password = driver.findElement(By.name("password"));
+//		password.sendKeys(Keys.CONTROL + "v");
 		
-		un.sendKeys(Keys.CONTROL +"a");
+		un.sendKeys("user-name",Keys.CONTROL+"a");
 		un.sendKeys(Keys.CONTROL+"c");
-		
-		WebElement password = driver.findElement(By.name("password"));
-		password.sendKeys(Keys.CONTROL + "v");
+		un.sendKeys(Keys.TAB,Keys.CONTROL+"v");
 
 	}
 
