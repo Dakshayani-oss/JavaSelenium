@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	//or
 	act.clickAndHold(drag).release(drop).build().perform();
 	
-		act.dragAndDrop(drag, drop).perform();
+	act.dragAndDrop(drag, drop).perform();
 		
 }
 }

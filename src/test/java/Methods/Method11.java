@@ -17,7 +17,7 @@ public class Method11 {
 		System.out.println(search.getTagName());
 		
 		//Method 12 : getAttribute()
-		System.out.println(search.getAttribute("role"));
+		System.out.println(search.getAttribute("placeholder"));
 		
 		//Method 13:getDomAttribute()
 		System.out.println(search.getDomAttribute("id"));
