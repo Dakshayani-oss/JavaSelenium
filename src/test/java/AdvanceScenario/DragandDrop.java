@@ -11,6 +11,8 @@ public static void main(String[] args) {
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://jqueryui.com/resources/demos/droppable/default.html ");
 	driver.manage().window().maximize();
+	
+	
 	WebElement drag = driver.findElement(By.id("draggable"));
 	WebElement drop = driver.findElement(By.id("droppable"));
 	Actions act = new Actions(driver);
