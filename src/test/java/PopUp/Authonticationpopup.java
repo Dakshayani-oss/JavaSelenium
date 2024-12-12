@@ -2,10 +2,12 @@ package PopUp;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Authonticationpopup {
 
-	public static void main(String[] args) {
+	@Test
+	public  void PTest() {
 		WebDriver driver = new ChromeDriver();
 		//driver.get("https://the-internet.herokuapp.com/basic_auth");
 		driver.manage().window().maximize();

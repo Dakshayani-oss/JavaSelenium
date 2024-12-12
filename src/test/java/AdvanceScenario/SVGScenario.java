@@ -3,10 +3,11 @@ package AdvanceScenario;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class SVGScenario {
-
-	public static void main(String[] args) throws Throwable {
+@Test
+	public  void svgTest() throws Throwable {
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://www.clinique.in/");
 		driver.manage().window().maximize();
